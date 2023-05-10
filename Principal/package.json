@@ -1,0 +1,28 @@
+{
+  "name": "projet_version_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm i server/modulesGames/Haraga_online/ && nodemon server/modulesGames/Haraga_online/server.js \" \"nodemon server/server.js\" \"nodemon server/modulesGames/MineBattle/server.js\" \"nodemon server/modulesGames/MineBattle/server_socket.js\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "battleships": "file:server/modulesGames/Haraga_online",
+    "bcrypt": "^5.1.0",
+    "concurrently": "^8.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "live-server": "^1.2.2",
+    "mongoose": "^7.0.5",
+    "nodemon": "^2.0.22",
+    "open": "^9.1.0",
+    "socket.io": "^4.6.1"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "premier_projet_mern",
+  "version": "1.0.0",
+  "description": "LIFKIYA",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -L server.js",
+    "dev": "concurrently \"nodemon server.js\" \"npm start --prefix client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "express-rate-limit": "^6.7.0",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.2",
+    "mongoose-sequence": "^5.3.1",
+    "nodemon": "^2.0.21",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "socket.io": "^4.6.1",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://forge.univ-lyon1.fr/p1707160/kiya.git"
+  }
+}

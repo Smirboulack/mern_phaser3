@@ -1,0 +1,335 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('./images/5.png');
+    background-repeat:repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  
+  nav {
+    position: fixed;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 0 2rem;
+  }
+
+  .main_accueil{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+  }
+
+  .main_accueil h1:hover {
+    text-decoration:overline underline;
+  }
+  
+
+  /* sur h1 de main_accueil , mettre un hoover qui grossit le texte */
+
+  
+  a{
+   text-decoration: none;
+   color: red;
+   font-family: helvetica;
+  }
+
+  
+  .logo {
+    font-size: 2rem;
+  }
+  
+  .logo_image{
+    width:100%;
+    height:50%;
+  }
+  
+  .toggle {
+    display: none;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 550px;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .menu li a:hover {
+    font-weight: bold;
+    color: rgba(21, 164, 207, 0.671);
+  }
+  
+  .btn {
+    border: 0;
+    background: green;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+  }
+  
+  .btn.btn-secondary {
+    background: transparent;
+    border: 2px solid yellow;
+    color: #fff; 
+  }
+
+  
+  .Interface_jeux{
+    position: absolute;
+    left: 70%;
+  }
+  
+  .nav-top {
+    position: absolute;
+    background: #fff;
+    color: blue;
+    top: 0px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(51,51,51,0.2);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  
+  
+  #titre_jeu{
+    position:absolute;
+    left:60%
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  
+  @media all and (max-width: 991px) {
+  
+    header {
+        background: transparent;
+    }
+  
+    .toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+    }
+  
+    .logo {
+        position: relative;
+        z-index: 20;
+    }
+  
+    .ouvrir {
+        display: block;
+    }
+  
+    .fermer {
+        display: none;
+    }
+  
+    .open .ouvrir {
+        display: none;
+    }
+  
+    .open .fermer {
+        display: block;
+    }
+  
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #000;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+  
+    .menu li a {
+        font-size: 2rem;
+    }
+  
+    .btn {
+        font-size: 2rem;
+    }
+  
+    .open .menu {
+        transform: translateX(0);
+    }
+  
+    .toggle_image{
+      display: none;
+    }
+    
+    .open #form_insc{
+      display: none;
+    }
+  
+    .open .Interface_jeux{
+      display: none;
+    }
+  
+    .open #titre_jeu{
+      display: none;
+    }
+  
+    #titre_jeu{
+      top: 0%;
+      left: 15%;
+    }
+  
+    .Interface_jeux{
+      top:0%;
+      left: 50%;
+      }
+  }
+  
+  .inscritpion_connex-form {
+    position: absolute;
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color:transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+
+  .inscritpion_connex-form input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+  }
+
+  .inscritpion_connex-form button{
+    position: relative;
+    left: 40%;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .inscritpion_connex-form input:hover{
+    border: 1px solid #000000;
+  }
+
+  .inscritpion_connex-form button:hover{
+    border: 1px solid #000000;
+    background-color: rgb(113, 197, 113);
+  }
+  
+  
+  label {
+    font-weight: bold;
+  }
+  
+  
+  @media (max-width: 991px) {
+    form {
+        width: 70%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    form {
+        width: 90%;
+    }
+  }
+  
+  .profil{
+    position: absolute;
+    font-size: 2rem;
+    top: 10%;
+    left: 10%;
+    color: white;
+  }
+
+  .Chat_vue{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    color: white;
+  }
+
+  .Chat_vue textarea{
+    min-width: 200px;
+    max-width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+  }
+
+  .Chat_vue input{
+    min-width: 200px;
+    max-width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    
+  }
+
+
+  .Chat_vue button{
+    width: 150px;
+    height: 50px;
+  }
+    
+  
+  
+  footer {
+    position: fixed;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    color: #fff;
+    /*padding: 0 2rem;*/
+    padding: 0 2rem;
+  }
+  

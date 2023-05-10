@@ -1,0 +1,88 @@
+/* Réinitialisation des styles de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles généraux pour l'ensemble de l'application */
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f5f5f5;
+  color: #333;
+  background-image: url('background_image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Conteneur principal de l'application */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Logo de l'application */
+.App-logo {
+  height: 80px;
+  margin-bottom: 20px;
+  animation: App-logo-spin infinite 2s linear;
+}
+
+/* Animation de rotation pour le logo */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* En-tête de l'application */
+.App-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Styles pour les boutons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #0077cc;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #0063a0;
+}
+
+.btn-primary {
+  background-color: #0077cc;
+}
+
+.btn-primary:hover {
+  background-color: #0063a0;
+}
+
+.btn-secondary {
+  background-color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #222;
+}
